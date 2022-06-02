@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="BobTile.svg"
+   inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\validtile3.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="729.42054"
+     inkscape:cy="163.85148"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer4"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2126"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:none">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#66ff00;fill-opacity:0.65040648;stroke:#ffffff;stroke-width:0.34999999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect827"
+       width="68.020096"
+       height="57.39613"
+       x="205.79753"
+       y="236.79755" />
+    <image
+       y="253.0957"
+       x="231.14662"
+       id="image876"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAACACAYAAAC/dL9XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2
+MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBODREMUNERTY4REJFODExODI2QkYyMDk4RjRB
+OUYwMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODg1MTc0OUYzMDYxMUU4OTc2N0M2Mjc2
+QUE5REY3RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODg1MTc0OEYzMDYxMUU4OTc2N0M2
+Mjc2QUE5REY3RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2lu
+ZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphYjc0
+YTRhMC1hZmExLTU1NDAtYTk3MC02NGY0YWY3NDYwZjAiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2Jl
+OmRvY2lkOnBob3Rvc2hvcDpkMTFkMzM3Yi02Y2NjLWY1NDgtYmNiMy1lMjBiNzc3MWFlMjgiLz4g
+PC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9
+InIiPz4Xcr4MAAAE/klEQVR42uydPWgUQRSAd49NKyJoFbGIBC00EiIcpAoYEYTgKZZWQa4wXQKp
+UqiFBEKqWKRIZyNCTgIBMUKqQMAgRJsgsRBTGRCxTXHuHM4yu87Mzs97s5vkPViS3O3Oe+/b9zMz
+e0fibrcbkURRgxAQCAJBIAgEgSAQBIJAEAgCQSAIBIEgEASCQBAIAkEgCASBIBAEgkAQCAJBIAgE
+gSAQBIJAEAgCQSAIBAmBIBAEgkAQCAJBIAgEgSAQBAJUkuAajw5NvykTR33nKSJOfGp0lteMzjE5
+r7YgFhcXxRSI9nc+ZIcpDNl7sjGgJXb+clvqaCYsl/O5n+V36kBOwZft70bDX2teyv19eeRWzH5+
+29uIBgZu5HWJ4lhXIEAoB9jf3ZW+XgajCCGDMTSkL64eIHxTo07flfSyJQmp2DQt+HmqyNDadHTo
+1HadUqOztNK7qNWe0BY87ogpgLJU4eOU6W1NTcZBQXARDQvV9nQ6XUCAzCxD93wMnUGn2LY575tS
+6CBEh1xbYZ30gESEylhfw8oKJrSORh1SoA5jO0eEbJbHX1PNKDE6hulsFiUifhyEK2KhbHNOjc31
+NatogRLd2DqbKtuPwICBCdgLhM8dgBZfWxIIA8buyqe7LstpXbETxxYLJsQNcVprbL5dkV70+0Bd
+2bmDJuEtwiieL8I42y+//t3G13j+5Xy1U2xVa7PJb925fHzotQZosVTdIQxR6Rq7Z7/ydI4IpkyV
+HjxfxbphW9RU12IWaLTVZxkQ6K7A6lMaJfHsk9nItj44F0um7M74IFPeDZkOOgj/0iXmv7emJqNn
+r+fwakRnaSVqXh3MGSF2i9AARN1ptwhbLBnttE5ojQoJgBdPFqXBQDCFaaFUVm5uJDQU3bgQ6eld
+LJkRKqdld802721bqCsUkK6hg2HrnM0GTXHJzdKVRyt6amzvnuuy48XTTq/dLC2/yWAw4zB3pziA
+og5uA7OJ22cdESYtpm9v+L+Bm0O/tMZygdiJNoXLbEohZFD6ouHe70dXPsXOqSFzHtMJTBF9UUFJ
+MJyfnVvo/Zx/PgPmDNSYKigN9gY/bAflucnkYn/4Oy/qFG2xgcKPyj9Dxe40v9tVihMIXaHEdqps
+fJ1tqPsRU+2H0tch60PZeCobKtuY8bm7VacHfc4SAoRvSIrh7ptKvrZYrzXKihF0bXAZW5xhBl10
+iVLcgcZ+IAwl3iDESU2VT8grBcEh8OWwuCwubtoyIDIYWKm0s70cjTTbOMWSDV4U1WN4tutc3HnG
+fIhbWdcwXVscFxhe7dP0Qxl1emqOPqFi23BsBcgPHQzsqHBZiTYglMj2IlVAQolNobQGYTt4EVyI
+FHGF3wipLBQElxvWcA25OmymQEFwjghXZXWFgLLWqGo/w/fmJKcdADiIV+v58JRNx6Gcx0jP5OPW
+VvbHzdFRr+4hGucLRFaMoZ0XfU9Ub5RB8THqwcSjyoqy6KMocWt8uvTBjm2klK1YQ3celfPWIKCg
+hBQT572KpU9NqZvzYF2jDlB8nEdpnyGhQDmPPqHCgILhfNCZpQ8UbOcrm2KbQAnpfK59ih9Bvn97
+5lT9y+jV9wuxFIQoJxWK6HwuItrTj0sv/vn5zLGGcuH6nxikRogDHRcoJs57Fcs6Q7F1Hqxr1AGK
+j/Mo7TMkFCjn0ecRGFAwnA86ofKBgu18ZTNLEyghnRflrwADAEaEVYg9jpIvAAAAAElFTkSuQmCC
+
+"
+       preserveAspectRatio="none"
+       height="33.866665"
+       width="17.4625" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <image
+       y="255.31599"
+       x="230.81375"
+       id="image823"
+       xlink:href="data:image/png;base64,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
+AElFTkSuQmCC
+"
+       preserveAspectRatio="none"
+       height="16.844212"
+       width="17.646317" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:none">
+    <path
+       style="fill:#ffffff;fill-opacity:0.65040648;stroke:#ffffff;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 239.26468,258.38791 0.86864,0.008 7.84269,2.60588 v 5.77969 l -7.76753,2.30521 h -1.26952 l -7.61719,-2.60588 -0.0585,-5.28691 z"
+       id="path832"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\encountertile.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.619;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="233.33705"
+       y="265.19495"
+       id="text836"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\encountertile.png"><tspan
+         sodipodi:role="line"
+         id="tspan834"
+         x="233.33705"
+         y="265.19495"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">ENTER</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 3 copy"
+     id="g844"
+     inkscape:groupmode="layer"
+     style="display:inline">
+    <path
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-ydpi="500"
+       inkscape:export-xdpi="500"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path838"
+       d="m 239.27928,273.09374 1.13717,0.002 8.00604,2.58242 -0.0248,5.86237 -7.92463,2.7517 -1.33566,-0.008 -7.75775,-2.75471 -0.009,-5.82434 z"
+       style="opacity:1;fill:#6a6968;fill-opacity:1;stroke:#50504f;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="display:inline;fill:#50504f;fill-opacity:1;stroke:#50504f;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 231.32118,281.62599 0.003,2.54382 7.80106,2.65312 h 1.33726 l 7.99132,-2.68528 0.0103,-2.44036 -7.99106,2.59494 -1.33566,-0.008 z"
+       id="path879"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 3 copy 1"
+     style="display:inline">
+    <path
+       style="fill:#996896;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 239.97708,281.68724 v -4.82865 l -5.53817,-3.19746 v 4.85111 z"
+       id="path897"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#6d4a6b;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 240.22263,276.86444 6.08286,-3.65956 v 4.78224 l -6.06604,3.69302 z"
+       id="path901"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#996896;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 234.56242,273.42682 5.68587,-3.384 5.94027,2.93989 -6.07064,3.66593 z"
+       id="path903"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#996896;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 240.4791,277.37908 -1.94105,-9.00366 -4.93446,5.19173 z"
+       id="path907"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#6d4a6b;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 238.73997,268.20385 4.34714,-1.9724 3.96964,7.3905 -6.57765,3.75713 z"
+       id="path909"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#893344;stroke:#000000;stroke-width:0.13229167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 237.48,277.78616 v 2.35077 l -1.35693,-0.7834 v -2.34199 c 0.45446,0.25653 0.9125,0.51748 1.35693,0.77462 z"
+       id="path913"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#bac9c9;stroke:#000000;stroke-width:0.13229167;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 234.92106,275.61423 v 0.90123 l 0.69227,0.39968 v -0.96192 z"
+       id="path923"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:#bac9c9;stroke:#000000;stroke-width:0.13229169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 238.27083,277.36556 v 0.90123 l 0.69227,0.39968 v -0.96192 z"
+       id="path923-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#ba2b5d;fill-opacity:1;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 238.74305,277.65027 c 0,0 -0.0133,0.33701 0.0227,0.47129 0.036,0.13427 -0.0243,0.3525 -0.008,0.36173 0.016,0.009 0,0 0.14555,0.10697 l 0.006,-0.85317 z"
+       id="path992"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#6e4639;fill-opacity:1;stroke:#000000;stroke-width:0.05291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 235.38821,274.94037 0.0613,0.22867 2.96969,1.71456 v -1.57943 l -0.22252,-0.3142 6e-5,5e-5"
+       id="path952"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#6e4e4b;stroke:#000000;stroke-width:0.05291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 235.38821,273.71667 v 1.2237 l 2.80847,1.62147 v -1.57187 l -2.78059,-1.60538 z"
+       id="path950"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e3e2db;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="263.36337"
+       y="124.76165"
+       id="text956"
+       transform="matrix(1.0059475,0.6428676,-0.23563027,0.84350419,0,0)"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
+         sodipodi:role="line"
+         id="tspan954"
+         x="263.36337"
+         y="124.76165"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332;fill:#e3e2db;">Bob's</tspan></text>
+    <path
+       style="display:inline;fill:#bac9c9;fill-opacity:1;stroke:#000000;stroke-width:0.13229169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 237.79436,270.74922 -1.56688,1.75482 2.22406,1.01941 z"
+       id="path923-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#ba2b5d;stroke:#000000;stroke-width:0.05291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 237.78385,270.90113 c 0,0 -0.0819,0.44434 0.0117,0.88866 0.0936,0.44434 0.12278,0.5262 0.0994,0.70159 -0.0234,0.17539 0.0643,0.4385 0.0468,0.52033 -0.0175,0.0819 -0.19879,0.22217 -0.19879,0.22217 l 0.70862,0.28956 z"
+       id="path973"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:#ba2b5d;fill-opacity:1;stroke:#000000;stroke-width:0.05291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 237.79436,270.74922 c 0,0 -0.23381,0.2631 -0.49696,0.8185 -0.3871,0.45039 -0.65798,0.8015 -0.60807,1.0933 l -0.46185,-0.15698 z"
+       id="path973-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:#ba2b5d;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-variant-east_asian:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 238.45573,277.51383 c 0,0 -0.10542,0.1137 -0.0847,0.21498 0.0207,0.10131 0.0248,0.55605 0.0248,0.55605 l -0.093,-0.0496 0.004,-0.80822 z"
+       id="path994"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:#ba2b5d;fill-opacity:1;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 235.12247,275.78577 c 0,0 0.0257,0.18818 -0.0103,0.32246 -0.036,0.13427 0.0202,0.43725 0.004,0.44648 -0.016,0.009 -0.0599,-0.0124 -0.14142,-0.0625 l -0.0122,-0.78702 z"
+       id="path992-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;opacity:1;vector-effect:none;fill:#ba2b5d;fill-opacity:1;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 235.38705,275.92218 c 0,0 0.10335,0.28527 0.0826,0.38655 -0.0207,0.10131 -0.0579,0.40722 -0.0579,0.40722 l 0.14054,0.10543 -0.008,-0.83509 z"
+       id="path994-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 236.3494,277.60273 c 0,0 0.61598,0.32452 0.75654,0.38241 0.14056,0.0579 0.14056,0.0579 0.14056,0.0579"
+       id="path1037"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 236.33791,277.73299 c 0,0 0.61598,0.32452 0.75654,0.38241 0.14056,0.0579 0.14056,0.0579 0.14056,0.0579"
+       id="path1037-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 236.31069,277.86188 c 0,0 0.61598,0.32452 0.75654,0.38241 0.14056,0.0579 0.14056,0.0579 0.14056,0.0579"
+       id="path1037-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 236.29415,278.12645 c 0,0 0.61598,0.32452 0.75654,0.38241 0.14056,0.0579 0.14056,0.0579 0.14056,0.0579"
+       id="path1037-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.02645833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 236.29208,278.34556 c 0,0 0.61598,0.32452 0.75654,0.38241 0.14056,0.0579 0.14056,0.0579 0.14056,0.0579"
+       id="path1037-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="F:\Unity\Hexagonal\Assets\Sprites\bobstile.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+  </g>
+</svg>
