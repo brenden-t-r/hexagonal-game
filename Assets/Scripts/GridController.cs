@@ -1,25 +1,33 @@
 using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
 
 public class GridController : MonoBehaviour
 {
     [SerializeField] private Grid grid;
-    [SerializeField] private Tilemap interactiveMap;
-    [SerializeField] private Tilemap extrasMap;
-    [SerializeField] private Light2D lightHightlightValid;
-    [SerializeField] private Light2D lightHighlightInvalid;
-    [SerializeField] private Light2D lightPlayer;
-    [SerializeField] private Tile validHoverTile;
-    [SerializeField] private Tile invalidHoverTile;
-    [SerializeField] private Tile shopTile;
-    [SerializeField] private Tile encounterTile;
     [SerializeField] private GameObject player;
     [SerializeField] private ParticleSystem particleSystem;
     [SerializeField] private Canvas shopUi;
     [SerializeField] private GameObject play;
+    [SerializeField] private Camera mainCamera;
+    
+    // Lighting
+    [SerializeField] private Light2D lightHighlightValid;
+    [SerializeField] private Light2D lightHighlightInvalid;
+    [SerializeField] private Light2D lightPlayer;
+    
+    // Tiles
+    [SerializeField] private Tilemap interactiveMap;
+    [SerializeField] private Tilemap extrasMap;
+    [SerializeField] private Tile validHoverTile;
+    [SerializeField] private Tile invalidHoverTile;
+    [SerializeField] private Tile shopTile;
+    [SerializeField] private Tile encounterTile;
+    
     private Vector3Int playerPos;
     private Vector3Int highlightedTilePos;
     private GameTile highlightedTile;
@@ -30,7 +38,7 @@ public class GridController : MonoBehaviour
         particleSystem.Stop();
         playerPos = grid.WorldToCell(player.transform.position);
         lightHighlightInvalid.enabled = false;
-        lightHightlightValid.enabled = false;
+        lightHighlightValid.enabled = false;
     }
 
     // Update is called once per frame
@@ -39,160 +47,138 @@ public class GridController : MonoBehaviour
         if (!play.activeSelf) return;
         Vector3Int mousePos = GetMousePosition();
         Vector3Int hoverPos = new Vector3Int(mousePos.x, mousePos.y, 0);
-        hoverHighlight(hoverPos);
-        clickEvent();
+        HoverHighlight(hoverPos);
+        ClickEvent();
+    }
+    
+    private Vector3Int GetMousePosition () {
+        Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        return grid.WorldToCell(mouseWorldPos);
     }
 
-    private void hoverHighlight(Vector3Int hoverPos)
+    private void HoverHighlight(Vector3Int hoverPos)
     {
         if (hoverPos == highlightedTilePos) return;
         if (highlightedTile != null)
         {
-            extrasMap.SetTile(highlightedTilePos, null);
-            lightHighlightInvalid.enabled = false;
-            lightHightlightValid.enabled = false;
-            particleSystem.Stop();
+            ResetHoverHighlight();
         }
         highlightedTilePos = hoverPos;
-        // if (hoverPos == playerPos) return;
-        TileBase hoverTile = interactiveMap.GetTile(hoverPos);
-        if (hoverTile is GameTile gTile)
+        if (interactiveMap.GetTile(hoverPos) is GameTile gameTile)
         {
-            if (gTile.type != GameTile.TileTypes.UI)
+            if (gameTile.type != GameTile.TileTypes.UI)
             {
-                highlightedTile = gTile;
-                bool isValid = isValidTile(gTile, hoverPos);
-                Tile validTile = gTile.type == GameTile.TileTypes.SHOP ? shopTile
-                    : gTile.type == GameTile.TileTypes.ENCOUNTER ? encounterTile
-                    : validHoverTile;
-                extrasMap.SetTile(hoverPos, isValid ? validTile : invalidHoverTile);
-                Light2D light = isValid ? lightHightlightValid : lightHighlightInvalid;
-                light.enabled = true;
-                light.transform.position = interactiveMap.CellToWorld(highlightedTilePos);
-                if (isValid) {
-                    particleSystem.transform.position = interactiveMap.CellToWorld(highlightedTilePos);
-                    particleSystem.Play();
-                }
+                DoHoverHighlight(hoverPos, gameTile);
             }
         } else highlightedTile = null;
     }
 
-    private void clickEvent()
+    private void DoHoverHighlight(Vector3Int hoverPos, GameTile gTile)
     {
-        if (Input.GetMouseButtonDown(0))
+        highlightedTile = gTile;
+        var isValid = IsValidTile(gTile, hoverPos);
+        Tile validTile = gTile.type == GameTile.TileTypes.SHOP ? shopTile
+            : gTile.type == GameTile.TileTypes.ENCOUNTER ? encounterTile
+            : validHoverTile;
+        extrasMap.SetTile(hoverPos, isValid ? validTile : invalidHoverTile);
+        Light2D lighting = isValid ? lightHighlightValid : lightHighlightInvalid;
+        lighting.enabled = true;
+        lighting.transform.position = interactiveMap.CellToWorld(highlightedTilePos);
+        if (isValid)
         {
-            if (highlightedTile == null) return;
-            Debug.Log("is a " + highlightedTile.type);
-            if (isValidTile(highlightedTile, highlightedTilePos))
+            particleSystem.transform.position = interactiveMap.CellToWorld(highlightedTilePos);
+            particleSystem.Play();
+        }
+    }
+
+    private void ResetHoverHighlight()
+    {
+        extrasMap.SetTile(highlightedTilePos, null);
+        lightHighlightInvalid.enabled = false;
+        lightHighlightValid.enabled = false;
+        particleSystem.Stop();
+    }
+
+    private bool IsValidTile(GameTile hoverTile, Vector3Int hoverPos)
+    {
+        if (!IsNeighbor(playerPos, hoverPos)) return false;
+        switch (hoverTile.type)
+        {
+            case GameTile.TileTypes.GRASS:
+            case GameTile.TileTypes.SHOP:
+            case GameTile.TileTypes.ENCOUNTER:
+                return true;
+            case GameTile.TileTypes.WATER:
+                return false;
+            default:
+                return false;
+        }
+    }
+
+    private void ClickEvent()
+    {
+        if (!Input.GetMouseButtonDown(0)) return;
+        if (highlightedTile == null) return;
+        if (!IsValidTile(highlightedTile, highlightedTilePos)) return;
+        switch (highlightedTile.type)
+        {
+            case GameTile.TileTypes.SHOP:
+                DoShop();
+                break;
+            case GameTile.TileTypes.ENCOUNTER:
+                DoEncounter();
+                break;
+            case GameTile.TileTypes.GRASS:
+            case GameTile.TileTypes.WATER:
+            case GameTile.TileTypes.UI:
+            default:
             {
-                if (GameTile.TileTypes.SHOP == highlightedTile.type)
-                {
-                    // Do Shop
-                    Debug.Log("Do shop");
-                    play.SetActive(false);
-                    shopUi.rootCanvas.enabled = true;
-                }
-                else if (GameTile.TileTypes.ENCOUNTER == highlightedTile.type)
-                {
-                    // Do encounter
-                    Debug.Log("Do encounter");
-                }
-                else
-                {
-                    // Do move
-                    playerPos = highlightedTilePos;
-                    // player.transform.position = interactiveMap.CellToWorld(highlightedTilePos);
-                    play.SetActive(false);
-                    StartCoroutine(MoveOverSeconds(player.transform, interactiveMap.CellToWorld(highlightedTilePos), 0.5f, play));
-                    lightPlayer.transform.position = player.transform.position;
-                }
+                DoMove();
+                break;
             }
         }
     }
 
-    bool isValidTile(GameTile hoverTile, Vector3Int hoverPos)
+    private void DoShop()
     {
-        if (!isNeighbor(playerPos, hoverPos)) return false;
-        if (hoverTile.type == GameTile.TileTypes.GRASS)
-        {
-            return true;
-        }
-        if (hoverTile.type == GameTile.TileTypes.SHOP)
-        {
-            return true;
-        }
-        if (hoverTile.type == GameTile.TileTypes.ENCOUNTER)
-        {
-            return true;
-        }
-        if (hoverTile.type == GameTile.TileTypes.WATER)
-        {
-            return false;
-        }
-        return false;
+        play.SetActive(false);
+        shopUi.rootCanvas.enabled = true;
     }
 
-    Vector3Int GetMousePosition () {
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        return grid.WorldToCell(mouseWorldPos);
+    private void DoEncounter()
+    {
+        return;
+    }
+    
+    private void DoMove()
+    {
+        play.SetActive(false);
+        playerPos = highlightedTilePos;
+        Vector3 cellToWorld = interactiveMap.CellToWorld(highlightedTilePos);
+        StartCoroutine(Utils.StaticUtils.MoveOverSeconds(player.transform, cellToWorld, 0.5f, play));
+        lightPlayer.transform.position = player.transform.position;
     }
 
-    static Vector3Int 
-    LEFT = new Vector3Int(-1, 0, 0),
-    RIGHT = new Vector3Int(1, 0, 0),
-    DOWN = new Vector3Int(0, -1, 0),
-    DOWNLEFT = new Vector3Int(-1, -1, 0),
-    DOWNRIGHT = new Vector3Int(1, -1, 0),
-    UP = new Vector3Int(0, 1, 0),
-    UPLEFT = new Vector3Int(-1, 1, 0),
-    UPRIGHT = new Vector3Int(1, 1, 0);
+    private static readonly Vector3Int 
+        Left = new Vector3Int(-1, 0, 0), 
+        Right = new Vector3Int(1, 0, 0),
+        Down = new Vector3Int(0, -1, 0), 
+        DownLeft = new Vector3Int(-1, -1, 0), 
+        DownRight = new Vector3Int(1, -1, 0), 
+        Up = new Vector3Int(0, 1, 0), 
+        UpLeft = new Vector3Int(-1, 1, 0), 
+        UpRight = new Vector3Int(1, 1, 0);
     
-    static Vector3Int[] directions_when_y_is_even = 
-        { LEFT, RIGHT, DOWN, DOWNLEFT, UP, UPLEFT };
-    static Vector3Int[] directions_when_y_is_odd = 
-        { LEFT, RIGHT, DOWN, DOWNRIGHT, UP, UPRIGHT };
-    
-    
-    public Vector3Int Neighbors(Vector3Int node) {
-        Vector3Int[] directions = (node.y % 2) == 0? 
-            directions_when_y_is_even: 
-            directions_when_y_is_odd;
-        foreach (var direction in directions) {
-            Vector3Int neighborPos = node + direction;
-            return neighborPos;
-        }
-        return Vector3Int.zero;
-    }
+    private readonly Vector3Int[] directions_when_y_is_even = { Left, Right, Down, DownLeft, Up, UpLeft };
+    private readonly Vector3Int[] directions_when_y_is_odd = { Left, Right, Down, DownRight, Up, UpRight };
 
-    public bool isNeighbor(Vector3Int node, Vector3Int other)
+    private bool IsNeighbor(Vector3Int node, Vector3Int other)
     {
-        Vector3Int[] directions = (node.y % 2) == 0? 
-            directions_when_y_is_even: 
-            directions_when_y_is_odd;
-        foreach (var direction in directions)
-        {
-            Vector3Int neighborPos = node + direction;
-            if (neighborPos == other) return true;
-        }
-        return false;
+        Vector3Int[] directions = (node.y % 2) == 0 
+            ? directions_when_y_is_even 
+            : directions_when_y_is_odd;
+        return directions
+            .Select(direction => node + direction)
+            .Any(neighborPos => neighborPos == other);
     }
-    
-    public static IEnumerator MoveOverSeconds(Transform objectToMove, Vector3 end, float seconds, GameObject play)
-    {
-        float elapsedTime = 0;
-        Vector3 startingPos = objectToMove.transform.position;
-        while (elapsedTime < seconds)
-        {
-            objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
-            elapsedTime += Time.deltaTime;
-            yield return new WaitForEndOfFrame();
-        }
-        objectToMove.transform.position = end;
-        play.SetActive(true);
-    }
-    
-    /* Raycast
-    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-    Vector3Int pos = interactiveMap.WorldToCell(hit.point);*/
 }

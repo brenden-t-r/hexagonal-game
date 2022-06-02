@@ -8,22 +8,21 @@ using UnityEngine;
 public class GUI : MonoBehaviour
 {
 
-    [SerializeField] Player player;
-    [SerializeField] TextMeshProUGUI textHeaderTurn;
-    [SerializeField] TextMeshProUGUI textHeaderPlayerName;
-
-    [SerializeField] TextMeshProUGUI textHeaderMapName;
-    [SerializeField] Slider sliderMalaise;
+    [SerializeField] private Player player;
+    [SerializeField] private TextMeshProUGUI textHeaderTurn;
+    [SerializeField] private TextMeshProUGUI textHeaderPlayerName;
+    [SerializeField] private TextMeshProUGUI textHeaderMapName;
+    [SerializeField] private Slider sliderMalaise;
+    [SerializeField] private Slider sliderInsanity;
+    [SerializeField] private Slider sliderTerror;
+    [SerializeField] private Slider sliderHeartache;
     [SerializeField] private TextMeshProUGUI sliderMalaiseText;
-    [SerializeField] Slider sliderInsanity;
     [SerializeField] private TextMeshProUGUI sliderInsanityText;
-    [SerializeField] Slider sliderTerror;
     [SerializeField] private TextMeshProUGUI sliderTerrorText;
-    [SerializeField] Slider sliderHeartache;
     [SerializeField] private TextMeshProUGUI sliderHeartacheText;
-    [SerializeField] TextMeshProUGUI textAvatarName;
-    [SerializeField] TextMeshProUGUI textAvatarClass;
-    [SerializeField] Image imageAvatar;
+    [SerializeField] private TextMeshProUGUI textAvatarName;
+    [SerializeField] private TextMeshProUGUI textAvatarClass;
+    [SerializeField] private Image imageAvatar; // TODO
 
 
     // Start is called before the first frame update

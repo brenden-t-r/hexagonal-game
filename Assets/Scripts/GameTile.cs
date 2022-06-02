@@ -1,5 +1,4 @@
-﻿using Unity.VisualScripting;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 public class GameTile : Tile
@@ -18,7 +17,7 @@ public class GameTile : Tile
     }
     
     #if UNITY_EDITOR
-    // The following is a helper that adds a menu item to create a RoadTile Asset
+    // The following is a helper that adds a menu item to create a GameTile Asset
     [MenuItem("Assets/Create/GameTile")]
     public static void CreateGameTile()
     {

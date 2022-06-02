@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     public string playerName;
     public PlayerClass playerClass;
     public float malaise;

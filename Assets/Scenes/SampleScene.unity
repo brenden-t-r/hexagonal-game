@@ -6054,7 +6054,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f57a485454cff0544a4c2006d8f179f3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12097,6 +12097,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234135792}
   m_CullTransparentMesh: 1
+--- !u!1 &1352135561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352135563}
+  - component: {fileID: 1352135562}
+  m_Layer: 0
+  m_Name: UtilsMono
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1352135562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352135561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c239d93a1a94745881314afc548ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1352135563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352135561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.156833, y: 0.8884524, z: 20.533293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499994158
 GameObject:
   m_ObjectHideFlags: 0
@@ -12705,19 +12749,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 2064269193}
-  interactiveMap: {fileID: 1092217734}
-  extrasMap: {fileID: 364284287}
-  lightHightlightValid: {fileID: 454413240}
-  lightHighlightInvalid: {fileID: 2102031351}
-  lightPlayer: {fileID: 386663624}
-  validHoverTile: {fileID: 11400000, guid: bd4327df929219f4d8177d2241c2b7b7, type: 2}
-  invalidHoverTile: {fileID: 11400000, guid: 2a2e6e7642bdf9149860dca304cc6b78, type: 2}
-  shopTile: {fileID: 11400000, guid: 090de956d40664843958cb3efa15258e, type: 2}
-  encounterTile: {fileID: 11400000, guid: ce9796e7019249e44a4021241ba28021, type: 2}
   player: {fileID: 684446593}
   particleSystem: {fileID: 231381788}
   shopUi: {fileID: 463423393}
   play: {fileID: 922300770}
+  mainCamera: {fileID: 519420031}
+  lightHighlightValid: {fileID: 454413240}
+  lightHighlightInvalid: {fileID: 2102031351}
+  lightPlayer: {fileID: 386663624}
+  interactiveMap: {fileID: 1092217734}
+  extrasMap: {fileID: 364284287}
+  validHoverTile: {fileID: 11400000, guid: bd4327df929219f4d8177d2241c2b7b7, type: 2}
+  invalidHoverTile: {fileID: 11400000, guid: 2a2e6e7642bdf9149860dca304cc6b78, type: 2}
+  shopTile: {fileID: 11400000, guid: 090de956d40664843958cb3efa15258e, type: 2}
+  encounterTile: {fileID: 11400000, guid: ce9796e7019249e44a4021241ba28021, type: 2}
 --- !u!4 &1825870308
 Transform:
   m_ObjectHideFlags: 0
@@ -12862,12 +12907,12 @@ MonoBehaviour:
   textHeaderPlayerName: {fileID: 1034408783}
   textHeaderMapName: {fileID: 750430508}
   sliderMalaise: {fileID: 2071161537}
-  sliderMalaiseText: {fileID: 610075754}
   sliderInsanity: {fileID: 1528514627}
-  sliderInsanityText: {fileID: 603423797}
   sliderTerror: {fileID: 805503800}
-  sliderTerrorText: {fileID: 246894062}
   sliderHeartache: {fileID: 2043933326}
+  sliderMalaiseText: {fileID: 610075754}
+  sliderInsanityText: {fileID: 603423797}
+  sliderTerrorText: {fileID: 246894062}
   sliderHeartacheText: {fileID: 2100509443}
   textAvatarName: {fileID: 1215439030}
   textAvatarClass: {fileID: 785637490}
