@@ -50,7 +50,7 @@ public class GridController : MonoBehaviour
         HoverHighlight(hoverPos);
         ClickEvent();
     }
-    
+
     private Vector3Int GetMousePosition () {
         Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         return grid.WorldToCell(mouseWorldPos);
