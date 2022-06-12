@@ -3,9 +3,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.Serialization;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.Tilemaps;
 
 public class GridController : MonoBehaviour
@@ -16,7 +14,7 @@ public class GridController : MonoBehaviour
     [SerializeField] private Canvas shopUi;
     [SerializeField] private GameObject play;
     [SerializeField] private Camera mainCamera;
-    
+
     // Lighting
     [SerializeField] private Light2D lightHighlightValid;
     [SerializeField] private Light2D lightHighlightInvalid;
@@ -33,6 +31,13 @@ public class GridController : MonoBehaviour
     private Vector3Int playerPos;
     private Vector3Int highlightedTilePos;
     private GameTile highlightedTile;
+    private PlayerControls controls;
+    [SerializeField] private float cursorSpeed = 1f;
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +52,14 @@ public class GridController : MonoBehaviour
     void Update()
     {
         if (!play.activeSelf) return;
+        var currentPosition = Mouse.current.position.ReadValue();
+        
+        // Gamepad left stick mouse adjustment
+        var gamepadLeftStick = controls.Gameplay.Mouse.ReadValue<Vector2>();
+        Vector2 deltaValue = gamepadLeftStick * cursorSpeed * Time.deltaTime;
+        Vector2 newPosition = currentPosition + deltaValue;
+        Mouse.current.WarpCursorPosition(newPosition);
+        
         Vector3Int mousePos = GetMousePosition();
         Vector3Int hoverPos = new Vector3Int(mousePos.x, mousePos.y, 0);
         HoverHighlight(hoverPos);
@@ -54,7 +67,7 @@ public class GridController : MonoBehaviour
     }
 
     private Vector3Int GetMousePosition () {
-        Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mouseWorldPos = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         return grid.WorldToCell(mouseWorldPos);
     }
 
@@ -119,7 +132,7 @@ public class GridController : MonoBehaviour
 
     private void ClickEvent()
     {
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (!Input.GetMouseButtonDown(0) && !controls.Gameplay.MouseClick.IsPressed()) return;
         if (highlightedTile == null) return;
         if (!IsValidTile(highlightedTile, highlightedTilePos)) return;
         switch (highlightedTile.type)
@@ -182,5 +195,15 @@ public class GridController : MonoBehaviour
         return directions
             .Select(direction => node + direction)
             .Any(neighborPos => neighborPos == other);
+    }
+    
+    private void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Gameplay.Disable();
     }
 }

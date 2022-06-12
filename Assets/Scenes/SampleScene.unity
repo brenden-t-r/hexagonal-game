@@ -12782,6 +12782,7 @@ MonoBehaviour:
   invalidHoverTile: {fileID: 11400000, guid: 2a2e6e7642bdf9149860dca304cc6b78, type: 2}
   shopTile: {fileID: 11400000, guid: 090de956d40664843958cb3efa15258e, type: 2}
   encounterTile: {fileID: 11400000, guid: ce9796e7019249e44a4021241ba28021, type: 2}
+  cursorSpeed: 1000
 --- !u!4 &1825870308
 Transform:
   m_ObjectHideFlags: 0

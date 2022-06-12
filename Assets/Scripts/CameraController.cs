@@ -12,17 +12,12 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float zoomSpeed = 3f;
     [SerializeField] private float zoomInMax = 40f;
     [SerializeField] private float zoomOutMax = 90f;
-
     private PlayerControls controls;
-    
     private Transform cameraTransform;
 
     void Awake()
     {
         controls = new PlayerControls();
-        //controls.Gameplay.ZoomIn.started, performed, canceled
-        // controls.Gameplay.ZoomIn.started += ctx => ZoomScreen(new Vector2(0, 1f));
-        // controls.Gameplay.ZoomOut.started += ctx => ZoomScreen(new Vector2(0, -1f));
     }
     
     // Start is called before the first frame update
