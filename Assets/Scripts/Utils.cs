@@ -40,6 +40,7 @@ namespace Utils {
             }
             objectToMove.transform.position = end;
             play.SetActive(true);
+            Play.PlayEnabled = true;
         }
 
         public static IEnumerator MoveOverSpeed(Transform objectToMove, Vector3 end, float speed){

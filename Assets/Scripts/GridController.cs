@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class GridController : MonoBehaviour
@@ -51,7 +52,7 @@ public class GridController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!play.activeSelf) return;
+        if (!Play.PlayEnabled) return;
         var currentPosition = Mouse.current.position.ReadValue();
         
         // Gamepad left stick mouse adjustment
@@ -64,6 +65,12 @@ public class GridController : MonoBehaviour
         Vector3Int hoverPos = new Vector3Int(mousePos.x, mousePos.y, 0);
         HoverHighlight(hoverPos);
         ClickEvent();
+        
+        if (controls.Gameplay.Start.WasReleasedThisFrame())
+        {
+            Play.PlayEnabled = false;
+            SceneManager.LoadScene("MenuScene", LoadSceneMode.Additive);
+        }
     }
 
     private Vector3Int GetMousePosition () {
@@ -167,7 +174,7 @@ public class GridController : MonoBehaviour
     
     private void DoMove()
     {
-        play.SetActive(false);
+        Play.PlayEnabled = false;
         playerPos = highlightedTilePos;
         Vector3 cellToWorld = interactiveMap.CellToWorld(highlightedTilePos);
         StartCoroutine(Utils.StaticUtils.MoveOverSeconds(player.transform, cellToWorld, 0.5f, play));
