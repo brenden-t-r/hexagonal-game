@@ -14,18 +14,12 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerName = "Brenden";
-        playerClass = new GothGirl();
+        playerName = PlayerData.playerName;
+        playerClass = PlayerData.playerClass;
         malaise = 0.3f;
         insanity = 0.1f; 
         terror = 0.4f;
         heartache = 0.2f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public interface PlayerClass
