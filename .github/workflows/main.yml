@@ -47,4 +47,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Build-${{ matrix.targetPlatform }} # The folder the action should deploy.
+          folder: build/Build-${{ matrix.targetPlatform }} # The folder the action should deploy.
