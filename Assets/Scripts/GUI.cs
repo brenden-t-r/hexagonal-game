@@ -22,22 +22,24 @@ public class GUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI sliderHeartacheText;
     [SerializeField] private TextMeshProUGUI textAvatarName;
     [SerializeField] private TextMeshProUGUI textAvatarClass;
-    [SerializeField] private Image imageAvatar; // TODO
+    [SerializeField] private Image imageAvatar;
+    [SerializeField] private Avatars avatars;
 
 
     // Start is called before the first frame update
     void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         textHeaderPlayerName.SetText(player.playerName);
         textAvatarName.SetText(player.playerName);
         textAvatarClass.SetText(player.playerClass.GetName());
         textHeaderMapName.SetText("Bob's City");
         textHeaderTurn.SetText("1");
+        imageAvatar.sprite = avatars.GetAvatar(player.playerClass.GetAvatarFileName());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         sliderMalaise.value = player.malaise;
         sliderMalaiseText.SetText($"{sliderMalaise.value:P0}");
         sliderTerror.value = player.terror;

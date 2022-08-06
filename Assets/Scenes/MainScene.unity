@@ -8274,7 +8274,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b19278c3d009754ca74e74934719bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs: {fileID: 3872706871087729171, guid: cd63b17357a2d174faafadf9465e3cbd, type: 3}
+  animator: {fileID: 684446597}
   playerName: 
+  prefab: {fileID: 4625214012547307328, guid: 6894059ef7ed1c34e9129cd704fb08e5, type: 3}
   malaise: 0
   insanity: 0
   terror: 0
@@ -9210,7 +9213,7 @@ GameObject:
   - component: {fileID: 985679215}
   - component: {fileID: 985679214}
   m_Layer: 5
-  m_Name: AvatarBarImage (2)
+  m_Name: AvatarImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13111,7 +13114,8 @@ MonoBehaviour:
   sliderHeartacheText: {fileID: 2100509443}
   textAvatarName: {fileID: 522666452}
   textAvatarClass: {fileID: 1672916208}
-  imageAvatar: {fileID: 0}
+  imageAvatar: {fileID: 985679214}
+  avatars: {fileID: 7947348089310348387, guid: d84653688bc943c4f9cccfeb5c3c7433, type: 3}
 --- !u!1 &1946763054
 GameObject:
   m_ObjectHideFlags: 0
