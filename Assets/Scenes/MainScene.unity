@@ -5565,8 +5565,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 2064269194}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 228.89, y: 0, z: 0}
 --- !u!1 &246894060
 GameObject:
@@ -5737,7 +5737,7 @@ Transform:
   - {fileID: 2102031350}
   - {fileID: 1977770769}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &296788108
 GameObject:
@@ -6092,7 +6092,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2064269194}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &364284285
 TilemapCollider2D:
@@ -6787,7 +6787,7 @@ GameObject:
   - component: {fileID: 463423392}
   - component: {fileID: 463423391}
   m_Layer: 5
-  m_Name: ShopUI
+  m_Name: UI_Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6875,7 +6875,7 @@ RectTransform:
   - {fileID: 390908789}
   - {fileID: 624635995}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7451,7 +7451,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555532069
 GameObject:
@@ -8188,7 +8188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &684446596
 SpriteRenderer:
@@ -9964,7 +9964,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2064269194}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &1092217734
 Tilemap:
@@ -12161,7 +12161,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499994158
 GameObject:
@@ -12936,7 +12936,7 @@ GameObject:
   - component: {fileID: 1825870308}
   - component: {fileID: 1825870307}
   m_Layer: 0
-  m_Name: GridController
+  m_Name: Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12983,7 +12983,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1946247228
 GameObject:
@@ -13081,7 +13081,7 @@ RectTransform:
   - {fileID: 1599106071}
   - {fileID: 720456334}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13115,7 +13115,6 @@ MonoBehaviour:
   textAvatarName: {fileID: 522666452}
   textAvatarClass: {fileID: 1672916208}
   imageAvatar: {fileID: 985679214}
-  avatars: {fileID: 7947348089310348387, guid: d84653688bc943c4f9cccfeb5c3c7433, type: 3}
 --- !u!1 &1946763054
 GameObject:
   m_ObjectHideFlags: 0
@@ -13737,10 +13736,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 231381789}
   - {fileID: 1092217732}
   - {fileID: 364284284}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066306054
 GameObject:

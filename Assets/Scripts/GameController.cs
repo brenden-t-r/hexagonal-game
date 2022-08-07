@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
-public class GridController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     [SerializeField] private Grid grid;
     [SerializeField] private GameObject player;
