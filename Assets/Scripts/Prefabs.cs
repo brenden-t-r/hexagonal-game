@@ -11,4 +11,9 @@ public class Prefabs : MonoBehaviour
     {
         return prefabs.First(item => item.name.Contains(name));
     }
+
+    public GameObject[] GetAll()
+    {
+        return prefabs;
+    }
 }

@@ -783,7 +783,7 @@ MonoBehaviour:
   prevClassBtn: {fileID: 1940143424}
   classSelectedText: {fileID: 109414399}
   classSelectedImage: {fileID: 1419384800}
-  avatars: {fileID: 7947348089310348387, guid: d84653688bc943c4f9cccfeb5c3c7433, type: 3}
+  _prefabs: {fileID: 3872706871087729171, guid: cd63b17357a2d174faafadf9465e3cbd, type: 3}
 --- !u!1 &401096904
 GameObject:
   m_ObjectHideFlags: 0

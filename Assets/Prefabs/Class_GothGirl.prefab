@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7579473543305377982}
   - component: {fileID: 204127688163984185}
+  - component: {fileID: 5234722727949003712}
   m_Layer: 0
   m_Name: Class_GothGirl
   m_TagString: Untagged
@@ -52,3 +53,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5234722727949003712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625214012547307328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9e6bd6cac343a7bb11c4656fedc6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatar: {fileID: 21300000, guid: c761ec2313422b442bc6292cc8283ed1, type: 3}

@@ -23,7 +23,6 @@ public class GUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textAvatarName;
     [SerializeField] private TextMeshProUGUI textAvatarClass;
     [SerializeField] private Image imageAvatar;
-    [SerializeField] private Avatars avatars;
 
 
     // Start is called before the first frame update
@@ -34,7 +33,7 @@ public class GUI : MonoBehaviour
         textAvatarClass.SetText(player.playerClass.GetName());
         textHeaderMapName.SetText("Bob's City");
         textHeaderTurn.SetText("1");
-        imageAvatar.sprite = avatars.GetAvatar(player.playerClass.GetAvatarFileName());
+        imageAvatar.sprite = player.playerClass.GetAvatar();
     }
 
     // Update is called once per frame

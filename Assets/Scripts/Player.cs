@@ -18,8 +18,16 @@ public class Player : MonoBehaviour
     void Start()
     {
         playerName = PlayerData.playerName;
-        playerClass = PlayerData.playerClass;
-        prefab = prefabs.GetPrefab(playerClass.GetPrefabName());
+        if (PlayerData.playerClass == null)
+        {
+            prefab = prefabs.GetPrefab(PlayerData.defaultPrefab);
+            playerClass = prefab.GetComponent<PlayerClass>();
+        }
+        else
+        {
+            playerClass = PlayerData.playerClass;
+            prefab = prefabs.GetPrefab(playerClass.GetPrefabName());
+        }
         animator.runtimeAnimatorController = prefab.GetComponent<Animator>().runtimeAnimatorController;
         malaise = 0.3f;
         insanity = 0.1f;
@@ -32,43 +40,6 @@ public class Player : MonoBehaviour
         string GetName();
         string GetAvatarFileName();
         string GetPrefabName();
-    }
-
-    public class GothGirl : PlayerClass
-    {
-
-        public string GetName()
-        {
-            return "Goth Girl";
-        }
-
-        public string GetAvatarFileName()
-        {
-            return "Goth_Avatar";
-        }
-        
-        public string GetPrefabName()
-        {
-            return "Class_GothGirl";
-        }
-    }
-    
-    public class Devil : PlayerClass
-    {
-
-        public string GetName()
-        {
-            return "Lil' Devil";
-        }
-
-        public string GetAvatarFileName()
-        {
-            return "Devil_Avatar";
-        }
-
-        public string GetPrefabName()
-        {
-            return "Class_Devil";
-        }
+        Sprite GetAvatar();
     }
 }

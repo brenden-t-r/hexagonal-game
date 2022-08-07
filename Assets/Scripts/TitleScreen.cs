@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 public class TitleScreen : MonoBehaviour
 {
-    private static readonly Player.PlayerClass[] ClassOptions = { new Player.GothGirl(), new Player.Devil() };
+    private static Player.PlayerClass[] ClassOptions;
     
     [SerializeField] private Button startButton;
     [SerializeField] private Button exitButton;
@@ -16,7 +17,7 @@ public class TitleScreen : MonoBehaviour
     [SerializeField] private Button prevClassBtn;
     [SerializeField] private TextMeshProUGUI classSelectedText;
     [SerializeField] private Image classSelectedImage;
-    [SerializeField] private Avatars avatars;
+    [SerializeField] private Prefabs _prefabs;
     private AsyncOperation loading;
     private Player.PlayerClass selectedClass = ClassOptions[0];
     private int selectedClassIndex = 0;
@@ -28,6 +29,7 @@ public class TitleScreen : MonoBehaviour
         exitButton.onClick.AddListener(Exit);
         nextClassBtn.onClick.AddListener(ClassSelectNext);
         prevClassBtn.onClick.AddListener(ClassSelectPrev);
+        ClassOptions = _prefabs.GetAll().Select(p => p.GetComponent<Player.PlayerClass>()).ToArray();
     }
 
     // Update is called once per frame
@@ -35,7 +37,6 @@ public class TitleScreen : MonoBehaviour
     {
         if (loading != null)
         {
-            Debug.Log(loading.progress);
             progressBar.value = Mathf.Clamp01(loading.progress / 0.9f);
         }
     }
@@ -66,7 +67,7 @@ public class TitleScreen : MonoBehaviour
         prevClassBtn.interactable = selectedClassIndex > 0;
         selectedClass = ClassOptions[selectedClassIndex];
         classSelectedText.SetText(selectedClass.GetName());
-        classSelectedImage.sprite = avatars.GetAvatar(selectedClass.GetAvatarFileName());
+        classSelectedImage.sprite = selectedClass.GetAvatar();
     }
 
     private void Exit()
